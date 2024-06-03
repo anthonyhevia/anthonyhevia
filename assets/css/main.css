@@ -2268,7 +2268,7 @@ input[type=submit].special:active,
 input[type=reset].special:active,
 input[type=button].special:active,
 .button.special:active {
-  background-color: #00266d;
+  background-color: #68cab5;
 }
 input[type=submit].disabled, input[type=submit]:disabled,
 input[type=reset].disabled,
@@ -2375,7 +2375,7 @@ input[type=button]:disabled,
   padding: 0;
 }
 #header > nav ul li {
-  border-top: solid 2px #1a4492;
+  border-top: solid 2px #68cab5;
   display: block;
   padding: 0;
 }
