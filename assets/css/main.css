@@ -2262,7 +2262,7 @@ input[type=submit].special:hover,
 input[type=reset].special:hover,
 input[type=button].special:hover,
 .button.special:hover {
-  background-color: #0038a0;
+  background-color: #68cab5;
 }
 input[type=submit].special:active,
 input[type=reset].special:active,
