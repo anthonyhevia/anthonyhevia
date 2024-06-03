@@ -16,5 +16,7 @@ Here are some ideas to get you started:
 -->
 
 B.A. in Computer Science and Mathematics
+
 Hamilton College '24
+
 He/Him
