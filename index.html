@@ -1,60 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
-        .container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
-            width: 100%;
-            text-align: center;
-        }
-        h1 {
-            margin-bottom: 20px;
-        }
-        .links {
-            list-style: none;
-            padding: 0;
-        }
-        .links li {
-            margin: 10px 0;
-        }
-        .links a {
-            text-decoration: none;
-            color: #007bff;
-            font-size: 18px;
-        }
-        .links a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
 
-<div class="container">
-    <h1>Welcome to Our Website</h1>
-    <ul class="links">
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="blog.html">Blog</a></li>
-    </ul>
-</div>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Anthony Hevia, B.A.</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
+	</head>
+	<body>
 
-</body>
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<!-- <span class="image avatar"><img src="images/hamilton-weathervane.png" alt=""/></span> -->
+					<h1 id="logo"><a href="#">Anthony Hevia</a></h1>
+					<!-- <p>Assistant Professor<br />
+                        Hamilton College<br />
+                        Department of Computer Science<br /><br />
+                    </p> -->
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">About Me</a></li>
+						<li><a href="#two">Research</a></li>
+                        <!-- <li><a href="#three">Software and Data Sets</a></li> -->
+						<!-- <li><a href="#four">Teaching</a></li> -->
+						<!-- <li><a href="#five">Theses Supervised</a></li> -->
+						<li><a href="#six">Contact Me</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<!-- <section id="one"> -->
+								<!-- <div class="container">
+									<header class="major">
+										<h3>About Me</h3>
+									</header>
+                                    <p>I am a technophile who is committed to open science and equality in education. My goal is to produce innovative high-quality research, and use my extensive research and practical experience to effectively teach and mentor the next generation of computer scientists. </p>
+									<p>In 2011, I received a PhD in Computer Science from University of California, Irvine under the advisement of David Eppstein and Mike Goodrich. From there, I worked in research and development in Intel's Computational Lithography Group until 2014. I then worked as a postdoctoral researcher with Peter Sanders at Karlsruhe Institute of Technology from 2014 to 2016, and as a Visiting Assistant Professor at Colgate University from 2016 to 2018. I am now an Assistant Professor at Hamilton College.</p>
+                                    <p>If you are looking for more information, here is <a href="AnthonyHevia_cv.pdf">my CV</a>, <a href="AnthonyHevia_research_liberal_2017-12-28.pdf">my research statement</a>, and <a href="AnthonyHevia_teaching_liberal_2017-12-28.pdf">my teaching statement</a>.</p>
+								</div> -->
+							<!-- </section> -->
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<header class="major">
+                                        <h3>Research</h3>
+                                    </header>
+									<!-- <p>My passion is to reveal and resolve the mismatch between the theory and practice of algorithms, with applications in large scale network analysis and computational geometry. My work often involves first understanding real-world properties of data sets, then designing algorithms that exploit these properties to gain efficiency that is not possible otherwise. This includes both theoretical efficiency and efficiency of algorithms in practice (algorithm engineering). Some specific areas that interest me are combinatorial optimization, subgraph counting/listing, network visualization, shortest paths, range searching, and dynamic data structures.</p> -->
+                                    
+                                    <h3>Publications</h3>
+
+                                    <p>[1] <b>Solving Edge Clique Cover Exactly via Synergistic Data Reduction</b>
+                                    <br>Anthony Hevia, Benjamin Kallus, Summer McClintic, Samantha Reisner, Darren Strash, and Johnathan Wilson
+                                    <br><i>]European Symposium on Algorithms (ESA)</i> <b>31</b>(4), 2023, pp. 61:1-61:19.
+                                    <br /><a href="https://doi.org/10.4230/LIPIcs.ESA.2023.61">doi:10.4230/LIPIcs.ESA.2023.61</a>
+                                    <br>The code is freely available <a href="https://github.com/darrenstrash/Redu3ECC">here</a>.</p>                                    
+								</div>
+							</section>
+                            
+
+						<!-- Five -->
+							<!-- <section id="five">
+								<div class="container">
+                                    <h3>Theses Supervised</h3>
+                                    <h4>Bachelor's Theses</h4>
+
+                                    <p><b><a href="theses/ba-thesis-ebbing.pdf">How to Partition a Graph when You Think Like a Vertex</a></b>, Dec. 2015
+                                    <br />Jan Ebbing
+                                    <br />Supervised with Peter Sanders and Christian Schulz
+
+                                    <p><b><a href="theses/ba-thesis-dahlum.pdf">Boosting Local Search for the Maximum Independent Set Problem</a></b>, Nov. 2015
+                                    <br />Jakob Dahlum
+                                    <br />Supervised with Peter Sanders and Christian Schulz
+								</div>
+							</section> -->
+
+						<!-- Six -->
+							<section id="six">
+								<div class="container">
+									<h3>Contact Me</h3>
+                                    <!-- <p>Hamilton College<br /> -->
+                                    <!-- Department of Computer Science<br /> -->
+                                    <!-- 198 College Hill Road<br /> -->
+                                    <!-- Clinton, NY 13323<br /> -->
+                                    <!-- <br /><b>Office:</b> Taylor Science Center 2015A</b> -->
+                                    <!-- <br /><b>Phone:</b> (315) 859-4188</b> -->
+                                    <br /><b>E-mail:</b> anthonyxhevia@gmail.com
+								</div>
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Anthony Hevia. All rights reserved. Last updated June 3, 2024.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<!-- <script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script> -->
+
+	</body>
 </html>
