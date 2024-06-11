@@ -31,7 +31,8 @@ updateOffsets();
 window.addEventListener('resize', updateOffsets);
 
 let lastSection = null;
-window.addEventListener('scroll', () => {
+
+function activateCurrentSection() {
   if (manualNavigation) return;
 
   let scrollPositionTop = window.scrollY;
@@ -63,4 +64,6 @@ window.addEventListener('scroll', () => {
       activeLink.classList.add("active");
     }
   }
-});
+}
+window.addEventListener('load', activateCurrentSection)
+window.addEventListener('scroll', activateCurrentSection);
