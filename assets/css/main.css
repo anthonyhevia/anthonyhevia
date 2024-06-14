@@ -1532,13 +1532,13 @@ a {
   -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-  border-bottom: solid 1px #e4e4e4;
+  border-bottom: solid 1px #44ac9b;
   color: inherit;
   text-decoration: none;
 }
 a:hover {
   border-bottom-color: transparent;
-  color: #00795e !important;
+  color: #44ac9b !important;
 }
 
 strong, b {
@@ -1682,7 +1682,7 @@ header h6 + p {
   line-height: 1.5em;
 }
 header.major h2 {
-  color: #00795e;
+  color: #008675;
   font-size: 3.5em;
 }
 header.major h2 + p {
@@ -1741,7 +1741,7 @@ input[type=password]:focus,
 input[type=email]:focus,
 select:focus,
 textarea:focus {
-  border-color: #00795e;
+  border-color: #008675;
 }
 
 .select-wrapper {
@@ -1843,7 +1843,7 @@ input[type=radio]:checked + label:before {
 }
 input[type=checkbox]:focus + label:before,
 input[type=radio]:focus + label:before {
-  border-color: #00795e;
+  border-color: #008675;
 }
 
 input[type=checkbox] + label:before {
@@ -2013,7 +2013,7 @@ ul.feature-icons li:before {
   text-transform: none !important;
 }
 ul.feature-icons li:before {
-  background: #00795e;
+  background: #008675;
   border-radius: 100%;
   color: #ffffff;
   display: block;
@@ -2256,20 +2256,20 @@ input[type=submit].special,
 input[type=reset].special,
 input[type=button].special,
 .button.special {
-  background-color: #00795e;
+  background-color: #008675;
   color: #ffffff !important;
 }
 input[type=submit].special:hover,
 input[type=reset].special:hover,
 input[type=button].special:hover,
 .button.special:hover {
-  background-color: #68cab5;
+  background-color: #44ac9b;
 }
 input[type=submit].special:active,
 input[type=reset].special:active,
 input[type=button].special:active,
 .button.special:active {
-  background-color: #68cab5;
+  background-color: #44ac9b;
 }
 input[type=submit].disabled, input[type=submit]:disabled,
 input[type=reset].disabled,
@@ -2316,7 +2316,7 @@ input[type=button]:disabled,
 
 /* Header */
 #header {
-  background: #00795e;
+  background: #008675;
   color: #bfcbe1;
   height: 100%;
   position: fixed;
@@ -2376,7 +2376,7 @@ input[type=button]:disabled,
   padding: 0;
 }
 #header > nav ul li {
-  border-top: solid 2px #68cab5;
+  border-top: solid 2px #44ac9b;
   display: block;
   padding: 0;
 }
@@ -2393,7 +2393,7 @@ input[type=button]:disabled,
 }
 #header > nav ul li a.active {
   background: #fff;
-  color: #00795e !important;
+  color: #008675 !important;
 }
 #header > nav ul li:first-child {
   border-top: 0;
@@ -2629,7 +2629,7 @@ input[type=button]:disabled,
     text-transform: none !important;
   }
   #titleBar .toggle:before {
-    background: #00795e;
+    background: #008675;
     color: #ffffff;
     content: "";
     display: block;
