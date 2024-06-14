@@ -1,4 +1,9 @@
 <!DOCTYPE HTML>
+
+<!-- TODO: Describe project in more detail (what is GP? What is Push? What was my goal?) -->
+<!-- TODO: Useful images -->
+<!-- TODO: Briefly talk about results/lessons and condense project description -->
+ 
 <html>
     <head>
         <link rel="icon" href="images/favicon.ico">
@@ -22,10 +27,60 @@
                             <header class="major">
                                 <h3>Genetic Programming System in Clojure</h3>
                             </header>
-                            <p>For my senior year at Hamilton College, I took a seminar in genetic programming, culminating in my senior seminar project: an implementation of the PushGP system in the Clojure programming language. This process involved writing an interpreter in Clojure for the Push programming language in order to run the genetic programming algorithm.</p>
+                            <!-- Project Summary -->
+                            <h4>Brief Summary</h4>
+                            <p>
+                                For my senior year at Hamilton College, I took a seminar in genetic programming, culminating in my senior seminar project: an implementation of the PushGP system in the Clojure programming language.
+                                This process involved writing an interpreter in Clojure for the Push programming language in order to run the genetic programming algorithm.
+                                After implementing the base system, I implemented original changes and ran experiments to see how those changes affected the system's ability to produce solution programs.
+                                <br /> Check out the <a href="https://github.com/anthonyhevia/PushGP-senior-project" target="_blank">GitHub repository</a> for the full implementation!
+                            </p>
+                            <!-- Introduction to Genetic Programming -->
+                            <h4>What is Genetic Programming?</h3>
+                            <p>
+                                Genetic programming (GP) is a subfield of evolutionary algorithms within <strong>artificial intelligence</strong>.
+                                Inspired by biological evolutionary theory, the algorithm entails <strong>evolving a population of programs</strong> to fit for a given task or problem in order to arrive at a solution program.
+                                The algorithm can be broken down into a few stages: <strong>initialization, evaluation, selection,</strong> and <strong> variation</strong>.
+                                <br />First, a population of random programs (called individuals) is initialized.
+                                Then, the population is evaluated on a set of training data, wherein each individual is assigned a certain error based on its performance on the training data.
+                                Using the calculated errors, individuals from the population are then selected using a set of selection methods, under the idea that those with the lowest error are more likely to be selected.
+                                This is where the biological concept of "survival of the fittest" is mimicked in GP.
+                                Finally, selected individuals are varied through a combination of mutation and crossover techniques to create the individuals for the next generation.
+                                <br />The newly created population then repeates the cycle of evaluation, selection, and variation until a program is found that perfectly solves the training data, or some other stopping condition is met.
+                            </p>
+                            <!-- Explain PushGP -->
+                            <h4>PushGP</h4>
+                            <p>
+                                <strong>PushGP</strong> is a particular implementation of the GP algorithm, which utilizes the <strong>Push programming langauge</strong>.
+                                Push is a stack-based programming langauge designed entirely to run the genetic programming language.
+                                <strong>Each data type in Push has its own corresponding stack</strong> (integer, string, float, etc.).
+                                The stack responsible for executing code is called the executation (or simply exec) stack.
+                                A Push program will run by popping instructions from the exec stack, and arguments from the appropriate data stacks, and pushing the results onto the appropriate return stack.
+                                <br />The individuals in PushGP are Push programs, that process inputs from the training set and push the resulting output onto the return type stack.
+                                However, <strong>Push is made specifially for genetic programming</strong>, and is not human-readable.
+                                So, the GP system is implemented in another programming language, and <strong>programs are run via a Push interpreter</strong> implemented in the chosen language.
+                                Conventionally, <strong>PushGP is implemented in Clojure</strong>, a functional LISP language.
+                            </p>
+                            <!-- Description of Project -->
+                            <h4>My Project</h4>
+                            <p>
+                                For my senior year at Hamilton College, the final project for my genetic programming seminar entailed a full implementation of the PushGP system in Clojure, from scratch.
+                                As I was implementing the Push interpreter, a suite of utility functions, and the skeleton for the PushGP system, I wrote several files of test files to ensure each function was working as expected.
+                                To test the full system, I implemented a simple symbolic regression function, with a set of training data generated by mapping the target function onto a generated set of inputs.
+                                After confirming that the system was working as intended, it was time to approach the second main objective of the project.
+                                <br /> Beyond a PushGP implementation, the other goal of the project was to implement an original change to the GP system up to my own discretion, and run experiments to gauge the degree to which the change(s) were benefitial in getting the system to produce solution programs.
+                                To summarize the changes I implemented to the system, I implemented new variation and parent selection methods to see if I could improve both the way the programs are chosen, and the way that those parent programs are changed to make a (hopefully) better child program.
+                                <br />The driving principle of my new variation technique was to be able to inject multiple new instructions sequentially into the genome of a parent program.
+                                Push is a programming language with a lot of <strong>neutral code</strong>, meaning that sometimes code in a Push program is inconsequential to the produced output.
+                                While this can lead to large Push programs, it is thought that this could be to the benefit of GP, as there is so much randomness in how programs are produced and varied.
+                                But, this lead me to the hypothesis that <strong>small changes in a Push program may be unlikely to lead to significant change in program behavior</strong>, which is the primary goal of variation in GP.
+                                <br /> My second change was in how certain programs are selected to crossover their genetic material.
+                                <strong>Genetic crossover</strong> is a staple in most GP systems, and involves selecting 2 parent programs to crossover.
+                                Ideally, we take 2 programs that excel in different parts of the training data to take the best components of both, creating a child program that is an improvement over both its parents.
+                                To tackle this goal, I implemented what I call <strong>semantics-based selection</strong>. In short, when the first parent is selected for crossover, we take into account that individual's error on each individual training case, and <strong>prioritize selecting a second parent that excels where the first parent is weak</strong>.
+                            </p>
                         </div>
                     </section>
-                
             </div>
             
             <section id="footer"></section>
