@@ -1,3 +1,5 @@
+// Activate the appropriate box in the header when clicked or scrolled to.
+
 const navElement = document.getElementById("nav");
 const ulElement = navElement.querySelector("ul");
 const liElements = ulElement.querySelectorAll("li");
