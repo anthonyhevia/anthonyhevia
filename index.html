@@ -12,7 +12,8 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 
-	<body>
+	<!-- TODO: Write js to mark toggle class as "header-visible" when the toggle is clicked -->
+	<body id="body" class="none">
 
 		<!-- Header -->
 		<section id="header">
@@ -24,6 +25,13 @@
 
 		<!-- Wrapper -->
 		<div id="wrapper">
+
+			<div id="titleBar">
+				<a href="#header" class="toggle"></a>
+				<span class="title">
+					<a href="#">Anthony Hevia</a>
+				</span>
+			</div>
 
 			<!-- Main -->
 			<div id="main">
@@ -100,6 +108,7 @@
 			<!-- <script src="assets/js/main.js"></script> -->
 			<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 			<script src="assets/js/header.js"></script>
+			<script src="assets/js/titleBar.js"></script>
 			<!-- <script src="assets/js/nav.js"></script> -->
 
 	</body>
